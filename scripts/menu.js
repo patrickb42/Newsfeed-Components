@@ -1,4 +1,3 @@
-
 (() => {
   const menu = document.getElementsByClassName('menu')[0];
   const menuButton = document.getElementsByClassName('menu-button')[0];

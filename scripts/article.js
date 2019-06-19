@@ -13,9 +13,6 @@
     };
 
     _expandButton.addEventListener('click', expandArticle);
-
-    const self = Object.freeze({ expandArticle });
-    return self;
   }
 
   const articles = document.querySelectorAll('.article');
