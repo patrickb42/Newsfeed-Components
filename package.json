@@ -17,8 +17,11 @@
   },
   "homepage": "https://github.com/patrickb42/Newsfeed-Components#readme",
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^1.11.0",
     "eslint": "^5.16.0",
     "eslint-config-airbnb-base": "^13.1.0",
-    "eslint-plugin-import": "^2.17.3"
+    "eslint-config-airbnb-typescript": "^4.0.0",
+    "eslint-plugin-import": "^2.17.3",
+    "tslint-config-airbnb": "^5.11.1"
   }
 }
