@@ -121,6 +121,11 @@
         hodor HODOR hodor, hodor hodor. Hodor.`,
     },
   ];
+
+  const articles = document.querySelector('.articles');
+  data.forEach((article) => {
+    articles.appendChild(createArticle({ articleObj: article }));
+  });
   interface CreateArticleArgs {
     articleObj: Article;
   }
@@ -143,13 +148,20 @@
 
     articleElement.classList.add('article');
 
+    h2.textContent = articleObj.title;
+
     pDate.classList.add('date');
+    pDate.textContent = articleObj.date;
+
+    p1st.textContent = articleObj.firstParagraph.replace(/^\n(?:\s)*/i, '');
+    p2nd.textContent = articleObj.secondParagraph.replace(/^\n(?:\s)*/i, '');
+    p3rd.textContent = articleObj.thirdParagraph.replace(/^\n(?:\s)*/i, '');
 
     span.classList.add('expandButton');
     span.textContent = '+';
     span.addEventListener('click', (e) => {
       articleElement.classList.toggle('article-open');
-      span.textContent = articleElement.classList.contains('article-open') ? '+' : '-';
+      span.textContent = articleElement.classList.contains('article-open') ? '-' : '+';
     });
 
     return articleElement;
