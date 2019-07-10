@@ -22,6 +22,7 @@
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-config-airbnb-typescript": "^4.0.0",
     "eslint-plugin-import": "^2.17.3",
+    "tslint": "^5.18.0",
     "tslint-config-airbnb": "^5.11.1"
   }
 }
